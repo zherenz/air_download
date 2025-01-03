@@ -79,6 +79,9 @@ def main(args):
                 'series': series,
                 'study': study 
         }).json()
+    
+    # check whether download is properly initiated
+    print(download_info)
 
     # Ensure that archive is ready for download
     while not has_started():
