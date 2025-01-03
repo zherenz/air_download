@@ -72,6 +72,7 @@ def main(args):
     download_info = requests.post(urljoin(args.URL, 'secure/search/download/start'),
         headers = header,
         json = {'decompress': False,
+                'includeLog': True,
                 'name': 'Download.zip',
                 'profile': args.profile,
                 'projectId': -1,
